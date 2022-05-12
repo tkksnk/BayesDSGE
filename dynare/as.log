@@ -1,0 +1,96 @@
+Starting Dynare (version 5.1).
+Calling Dynare with arguments: none
+Starting preprocessing of the model file ...
+Found 6 equation(s).
+Evaluating expressions...done
+Computing static model derivatives (order 1).
+Computing dynamic model derivatives (order 1).
+Processing outputs ...
+done
+Preprocessing completed.
+
+
+STEADY-STATE RESULTS:
+
+yy   		 0
+dp   		 0
+nomr 		 0
+gshk 		 0
+zshk 		 0
+rshk 		 0
+
+EIGENVALUES:
+         Modulus             Real        Imaginary
+
+          0.3747           0.3747                0
+            0.91             0.91                0
+            0.99             0.99                0
+           1.252            1.252                0
+           1.621            1.621                0
+
+
+There are 2 eigenvalue(s) larger than 1 in modulus 
+for 2 forward-looking variable(s)
+
+The rank condition is verified.
+
+
+MODEL SUMMARY
+
+  Number of variables:         6
+  Number of stochastic shocks: 3
+  Number of state variables:   3
+  Number of jumpers:           2
+  Number of static variables:  1
+
+
+MATRIX OF COVARIANCE OF EXOGENOUS SHOCKS
+Variables     errgshk   errzshk   errrshk
+errgshk      0.000000  0.000000  0.000000
+errzshk      0.000000  0.000000  0.000000
+errrshk      0.000000  0.000000  0.044100
+
+POLICY AND TRANSITION FUNCTIONS
+                                  yy              dp            nomr            zshk
+nomr(-1)                   -0.456837       -0.722930        0.374704               0
+gshk(-1)                    0.990000               0               0               0
+zshk(-1)                    0.641196        1.372214        0.706397        0.910000
+errgshk                     1.000000               0               0               0
+errzshk                     0.704611        1.507927        0.776261        1.000000
+errrshk                    -0.601102       -0.951224        0.493031               0
+
+
+MOMENTS OF SIMULATED VARIABLES
+VARIABLE              MEAN       STD. DEV.        VARIANCE        SKEWNESS        KURTOSIS
+yy                0.010209        0.135307        0.018308        0.034912        0.019439
+dp                0.016155        0.214119        0.045847        0.034912        0.019439
+nomr             -0.008373        0.110981        0.012317       -0.034912        0.019439
+zshk              0.000000        0.000000        0.000000             NaN             NaN
+
+
+CORRELATION OF SIMULATED VARIABLES
+VARIABLE         yy       dp     nomr     zshk
+yy           1.0000   1.0000  -1.0000      NaN
+dp           1.0000   1.0000  -1.0000      NaN
+nomr        -1.0000  -1.0000   1.0000      NaN
+zshk            NaN      NaN      NaN      NaN
+
+
+AUTOCORRELATION OF SIMULATED VARIABLES
+VARIABLE          1        2        3        4        5
+yy           0.4123   0.1695   0.0201  -0.0236  -0.0235
+dp           0.4123   0.1695   0.0201  -0.0236  -0.0235
+nomr         0.4123   0.1695   0.0201  -0.0236  -0.0235
+zshk            NaN      NaN      NaN      NaN      NaN
+
+
+
+VARIANCE DECOMPOSITION SIMULATING ONE SHOCK AT A TIME (in percent)
+                 errgshk           errzshk           errrshk  Tot. lin. contr.
+yy                  0.00              0.00            100.11            100.11
+dp                  0.00              0.00            100.11            100.11
+nomr                0.00              0.00            100.11            100.11
+zshk                 NaN               NaN               NaN               NaN
+Note: numbers do not add up to 100 due to non-zero correlation of simulated shocks in small samples
+
+Total computing time : 0h00m01s
