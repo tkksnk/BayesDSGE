@@ -1,0 +1,129 @@
+Starting Dynare (version 5.1).
+Calling Dynare with arguments: none
+Starting preprocessing of the model file ...
+Found 10 equation(s).
+Evaluating expressions...done
+Computing static model derivatives (order 1).
+Computing dynamic model derivatives (order 2).
+Processing outputs ...
+done
+Preprocessing completed.
+
+
+
+You did not declare endogenous variables after the estimation/calib_smoother command.
+
+Initial value of the log posterior (or likelihood): -312.987
+
+RESULTS FROM POSTERIOR ESTIMATION
+parameters
+        prior mean     mode    s.d.  prior pstdev
+
+tau         2.0000   2.2640  0.5489   gamm 0.5000 
+kappa       0.5000   1.0000  0.1183   unif 0.2887 
+psi1        1.5000   1.9323  0.2304   gamm 0.2500 
+psi2        0.5000   0.4658  0.3025   gamm 0.2500 
+rho_R       0.5000   0.7645  0.0358   unif 0.2887 
+rho_g       0.5000   0.9903  0.0162   unif 0.2887 
+rho_z       0.5000   0.9173  0.0236   unif 0.2887 
+rA          0.5000   0.3335  0.2785   gamm 0.5000 
+piA         7.0000   3.4278  0.3917   gamm 2.0000 
+gammaQ      0.4000   0.6247  0.1404   norm 0.2000 
+
+standard deviation of shocks
+        prior mean     mode    s.d.  prior pstdev
+
+errrshk     0.5013   0.2116  0.0274   invg 0.2621 
+errgshk     1.2533   0.6322  0.0543   invg 0.6551 
+errzshk     0.6267   0.1922  0.0227   invg 0.3276 
+
+
+Log data density [Laplace approximation] is -334.166748.
+
+Estimation::mcmc: Multiple chains mode.
+Estimation::mcmc: Old mh-files successfully erased!
+Estimation::mcmc: Old metropolis.log file successfully erased!
+Estimation::mcmc: Creation of a new metropolis.log file.
+Estimation::mcmc: Searching for initial values...
+Estimation::mcmc: Initial values found!
+
+Estimation::mcmc: Write details about the MCMC... Ok!
+Estimation::mcmc: Details about the MCMC are available in as_est/metropolis\as_est_mh_history_0.mat
+
+
+Estimation::mcmc: Number of mh files: 1 per block.
+Estimation::mcmc: Total number of generated files: 3.
+Estimation::mcmc: Total number of iterations: 20000.
+Estimation::mcmc: Current acceptance ratio per chain: 
+                                                       Chain  1: 21.295%
+                                                       Chain  2: 21.495%
+                                                       Chain  3: 20.96%
+Estimation::mcmc: Total number of MH draws per chain: 20000.
+Estimation::mcmc: Total number of generated MH files: 1.
+Estimation::mcmc: I'll use mh-files 1 to 1.
+Estimation::mcmc: In MH-file number 1 I'll start at line 5001.
+Estimation::mcmc: Finally I keep 15000 draws per chain.
+
+
+
+MCMC Inefficiency factors per block
+Parameter        Block 1     Block 2     Block 3
+SE_errrshk        57.922      71.329      51.170
+SE_errgshk        89.779      71.181      84.615
+SE_errzshk        87.629      53.828      29.779
+tau               79.686      52.648      78.930
+kappa             82.242      60.500      46.837
+psi1              55.040      89.146      52.058
+psi2              65.502      58.286      66.999
+rho_R             78.022      59.091      73.656
+rho_g             90.905     125.833      57.687
+rho_z            101.727      57.068      60.086
+rA                56.129      66.077      45.149
+piA               53.149      51.877      83.783
+gammaQ            43.508      47.851      88.876
+
+Estimation::mcmc::diagnostics: Univariate convergence diagnostic, Brooks and Gelman (1998):
+    Parameter 1...  Done! 
+    Parameter 2...  Done! 
+    Parameter 3...  Done! 
+    Parameter 4...  Done! 
+    Parameter 5...  Done! 
+    Parameter 6...  Done! 
+    Parameter 7...  Done! 
+    Parameter 8...  Done! 
+    Parameter 9...  Done! 
+    Parameter 10...  Done! 
+    Parameter 11...  Done! 
+    Parameter 12...  Done! 
+    Parameter 13...  Done! 
+
+Estimation::marginal density: I'm computing the posterior mean and covariance...  Done!
+Estimation::marginal density: I'm computing the posterior log marginal density (modified harmonic mean)... Done!
+
+
+ESTIMATION RESULTS
+
+Log data density is -334.656801.
+
+parameters
+          prior mean   post. mean        90% HPD interval    prior       pstdev
+
+tau            2.000       2.3691      1.5677      3.2437     gamm       0.5000
+kappa          0.500       0.8467      0.6768      1.0000     unif       0.2887
+psi1           1.500       1.9057      1.5400      2.2799     gamm       0.2500
+psi2           0.500       0.5891      0.1401      1.0172     gamm       0.2500
+rho_R          0.500       0.7733      0.7106      0.8291     unif       0.2887
+rho_g          0.500       0.9777      0.9541      1.0000     unif       0.2887
+rho_z          0.500       0.9238      0.8836      0.9620     unif       0.2887
+rA             0.500       0.4175      0.0000      0.7791     gamm       0.5000
+piA            7.000       3.3944      2.7873      4.0200     gamm       2.0000
+gammaQ         0.400       0.6018      0.3834      0.8219     norm       0.2000
+
+standard deviation of shocks
+          prior mean   post. mean        90% HPD interval    prior       pstdev
+
+errrshk        0.501       0.2172      0.1736      0.2586     invg       0.2621
+errgshk        1.253       0.6514      0.5633      0.7441     invg       0.6551
+errzshk        0.627       0.1993      0.1634      0.2368     invg       0.3276
+
+Total computing time : 0h05m06s

@@ -51,13 +51,13 @@ errzshk      0.000000  0.000000  0.000000
 errrshk      0.000000  0.000000  0.044100
 
 POLICY AND TRANSITION FUNCTIONS
-                                  yy              dp            nomr            zshk
+                                  yy              dp            nomr            rshk
 nomr(-1)                   -0.456837       -0.722930        0.374704               0
 gshk(-1)                    0.990000               0               0               0
-zshk(-1)                    0.641196        1.372214        0.706397        0.910000
+zshk(-1)                    0.641196        1.372214        0.706397               0
 errgshk                     1.000000               0               0               0
-errzshk                     0.704611        1.507927        0.776261        1.000000
-errrshk                    -0.601102       -0.951224        0.493031               0
+errzshk                     0.704611        1.507927        0.776261               0
+errrshk                    -0.601102       -0.951224        0.493031        1.000000
 
 
 MOMENTS OF SIMULATED VARIABLES
@@ -65,15 +65,15 @@ VARIABLE              MEAN       STD. DEV.        VARIANCE        SKEWNESS      
 yy                0.010209        0.135307        0.018308        0.034912        0.019439
 dp                0.016155        0.214119        0.045847        0.034912        0.019439
 nomr             -0.008373        0.110981        0.012317       -0.034912        0.019439
-zshk              0.000000        0.000000        0.000000             NaN             NaN
+rshk             -0.010486        0.205337        0.042163        0.042423        0.186224
 
 
 CORRELATION OF SIMULATED VARIABLES
-VARIABLE         yy       dp     nomr     zshk
-yy           1.0000   1.0000  -1.0000      NaN
-dp           1.0000   1.0000  -1.0000      NaN
-nomr        -1.0000  -1.0000   1.0000      NaN
-zshk            NaN      NaN      NaN      NaN
+VARIABLE         yy       dp     nomr     rshk
+yy           1.0000   1.0000  -1.0000  -0.9270
+dp           1.0000   1.0000  -1.0000  -0.9270
+nomr        -1.0000  -1.0000   1.0000   0.9270
+rshk        -0.9270  -0.9270   0.9270   1.0000
 
 
 AUTOCORRELATION OF SIMULATED VARIABLES
@@ -81,7 +81,7 @@ VARIABLE          1        2        3        4        5
 yy           0.4123   0.1695   0.0201  -0.0236  -0.0235
 dp           0.4123   0.1695   0.0201  -0.0236  -0.0235
 nomr         0.4123   0.1695   0.0201  -0.0236  -0.0235
-zshk            NaN      NaN      NaN      NaN      NaN
+rshk         0.0392   0.0372  -0.0382  -0.0309  -0.0354
 
 
 
@@ -90,7 +90,7 @@ VARIANCE DECOMPOSITION SIMULATING ONE SHOCK AT A TIME (in percent)
 yy                  0.00              0.00            100.11            100.11
 dp                  0.00              0.00            100.11            100.11
 nomr                0.00              0.00            100.11            100.11
-zshk                 NaN               NaN               NaN               NaN
+rshk                0.00              0.00            100.11            100.11
 Note: numbers do not add up to 100 due to non-zero correlation of simulated shocks in small samples
 
 Total computing time : 0h00m01s

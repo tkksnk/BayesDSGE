@@ -39,4 +39,4 @@ shocks;
 var errrshk = sigma_R^2;
 end;
 
-stoch_simul(periods=1000,order=1,irf=10) yy dp nomr zshk;
+stoch_simul(periods=1000,order=1,irf=10) yy dp nomr rshk;

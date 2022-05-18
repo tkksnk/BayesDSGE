@@ -210,7 +210,7 @@ M_.Sigma_e(3, 3) = sigma_R^2;
 options_.irf = 10;
 options_.order = 1;
 options_.periods = 1000;
-var_list_ = {'yy';'dp';'nomr';'zshk'};
+var_list_ = {'yy';'dp';'nomr';'rshk'};
 [info, oo_, options_, M_] = stoch_simul(M_, options_, oo_, var_list_);
 
 
