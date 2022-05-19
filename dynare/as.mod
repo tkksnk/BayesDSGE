@@ -36,6 +36,8 @@ steady;
 check;
 
 shocks;
+var errgshk = sigma_g^2;
+var errzshk = sigma_z^2;
 var errrshk = sigma_R^2;
 end;
 

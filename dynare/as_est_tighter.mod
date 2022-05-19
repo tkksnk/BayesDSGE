@@ -72,14 +72,14 @@ estimation(
 datafile = us,
 mode_compute = 4,
 //mode_compute = 0,
-//mode_file = as_est_mode,
+//mode_file = as_est_tighter_mode,
 mode_check,
 mh_replic = 20000,
 //mh_replic = 0,
 //load_mh_file,
 mh_drop = 0.25,
 mh_jscale = 0.6,
-mh_nblock = 1
+mh_nblocks = 1
 //irf = 40,
 //bayesian_irf
 );

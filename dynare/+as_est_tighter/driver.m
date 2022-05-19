@@ -312,12 +312,14 @@ else
     estim_params_.var_exo(tmp1,2) = 0.24;
 end
 skipline()
+options_.load_mh_file = true;
 options_.mh_drop = 0.25;
 options_.mh_jscale = 0.6;
-options_.mh_replic = 20000;
+options_.mh_nblck = 1;
+options_.mh_replic = 0;
 options_.mode_check.status = true;
 options_.mode_compute = 4;
-options_.datafile = 'us';
+options_.datafile = 'us1';
 options_.order = 1;
 var_list_ = {};
 oo_recursive_=dynare_estimation(var_list_);

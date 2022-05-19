@@ -314,7 +314,7 @@ end
 skipline()
 options_.mh_drop = 0.25;
 options_.mh_jscale = 0.6;
-options_.mh_nblck = 3;
+options_.mh_nblck = 1;
 options_.mh_replic = 20000;
 options_.mode_compute = 0;
 options_.datafile = 'us';

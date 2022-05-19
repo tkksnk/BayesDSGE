@@ -3,8 +3,6 @@ varexo errgshk errzshk errrshk;
 parameters tau kappa psi1 psi2 rho_R rho_g rho_z rA piA gammaQ;
 varobs dy_obs pi_obs r_obs;
 
-//tau = 1.0;
-
 model;
 #bet  = 1/(1+rA/400);
 

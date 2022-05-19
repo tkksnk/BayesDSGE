@@ -206,12 +206,16 @@ oo_.dr.eigval = check(M_,options_,oo_);
 % SHOCKS instructions
 %
 M_.exo_det_length = 0;
+M_.Sigma_e(1, 1) = sigma_g^2;
+M_.Sigma_e(2, 2) = sigma_z^2;
 M_.Sigma_e(3, 3) = sigma_R^2;
 options_.irf = 10;
 options_.order = 1;
 options_.periods = 1000;
 var_list_ = {'yy';'dp';'nomr';'rshk'};
 [info, oo_, options_, M_] = stoch_simul(M_, options_, oo_, var_list_);
+var_list_ = {'yy';'dp';'nomr'};
+oo_ = shock_decomposition(M_,oo_,options_,var_list_,bayestopt_,estim_params_);
 
 
 oo_.time = toc(tic0);

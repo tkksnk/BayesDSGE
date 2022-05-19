@@ -40,24 +40,20 @@ errzshk     0.6267   0.1922  0.0227   invg 0.3276
 
 Log data density [Laplace approximation] is -334.166748.
 
-Estimation::mcmc: Multiple chains mode.
-Estimation::mcmc: Old mh-files successfully erased!
+Estimation::mcmc: One Chain mode.
 Estimation::mcmc: Old metropolis.log file successfully erased!
 Estimation::mcmc: Creation of a new metropolis.log file.
-Estimation::mcmc: Searching for initial values...
-Estimation::mcmc: Initial values found!
+Estimation::mcmc: Initialization at the posterior mode.
 
 Estimation::mcmc: Write details about the MCMC... Ok!
 Estimation::mcmc: Details about the MCMC are available in as_est/metropolis\as_est_mh_history_0.mat
 
 
 Estimation::mcmc: Number of mh files: 1 per block.
-Estimation::mcmc: Total number of generated files: 3.
+Estimation::mcmc: Total number of generated files: 1.
 Estimation::mcmc: Total number of iterations: 20000.
 Estimation::mcmc: Current acceptance ratio per chain: 
-                                                       Chain  1: 21.295%
-                                                       Chain  2: 21.495%
-                                                       Chain  3: 20.96%
+                                                       Chain  1: 21.895%
 Estimation::mcmc: Total number of MH draws per chain: 20000.
 Estimation::mcmc: Total number of generated MH files: 1.
 Estimation::mcmc: I'll use mh-files 1 to 1.
@@ -67,35 +63,39 @@ Estimation::mcmc: Finally I keep 15000 draws per chain.
 
 
 MCMC Inefficiency factors per block
-Parameter        Block 1     Block 2     Block 3
-SE_errrshk        57.922      71.329      51.170
-SE_errgshk        89.779      71.181      84.615
-SE_errzshk        87.629      53.828      29.779
-tau               79.686      52.648      78.930
-kappa             82.242      60.500      46.837
-psi1              55.040      89.146      52.058
-psi2              65.502      58.286      66.999
-rho_R             78.022      59.091      73.656
-rho_g             90.905     125.833      57.687
-rho_z            101.727      57.068      60.086
-rA                56.129      66.077      45.149
-piA               53.149      51.877      83.783
-gammaQ            43.508      47.851      88.876
+Parameter        Block 1
+SE_errrshk        64.635
+SE_errgshk        46.493
+SE_errzshk        56.740
+tau               62.691
+kappa             78.202
+psi1              42.625
+psi2              66.842
+rho_R             60.077
+rho_g             48.785
+rho_z             87.401
+rA                56.174
+piA               64.759
+gammaQ            70.784
 
-Estimation::mcmc::diagnostics: Univariate convergence diagnostic, Brooks and Gelman (1998):
-    Parameter 1...  Done! 
-    Parameter 2...  Done! 
-    Parameter 3...  Done! 
-    Parameter 4...  Done! 
-    Parameter 5...  Done! 
-    Parameter 6...  Done! 
-    Parameter 7...  Done! 
-    Parameter 8...  Done! 
-    Parameter 9...  Done! 
-    Parameter 10...  Done! 
-    Parameter 11...  Done! 
-    Parameter 12...  Done! 
-    Parameter 13...  Done! 
+
+Geweke (1992) Convergence Tests, based on means of draws 5000 to 8000 vs 12500 to 20000.
+p-values are for Chi2-test for equality of means.
+Parameter          Post. Mean        Post. Std   p-val No Taper   p-val 4% Taper   p-val 8% Taper  p-val 15% Taper
+SE_errrshk              0.218            0.026            0.000            0.512            0.478            0.437
+SE_errgshk              0.660            0.057            0.000            0.517            0.532            0.483
+SE_errzshk              0.200            0.022            0.000            0.108            0.120            0.096
+tau                     2.384            0.536            0.001            0.637            0.613            0.557
+kappa                   0.850            0.118            0.021            0.739            0.763            0.776
+psi1                    1.933            0.226            0.330            0.868            0.857            0.834
+psi2                    0.597            0.301            0.000            0.417            0.440            0.474
+rho_R                   0.776            0.035            0.173            0.830            0.839            0.840
+rho_g                   0.978            0.017            0.000            0.552            0.551            0.545
+rho_z                   0.924            0.024            0.000            0.046            0.052            0.058
+rA                      0.437            0.262            0.238            0.865            0.871            0.872
+piA                     3.418            0.411            0.890            0.984            0.986            0.987
+gammaQ                  0.601            0.140            0.037            0.768            0.792            0.807
+
 
 Estimation::marginal density: I'm computing the posterior mean and covariance...  Done!
 Estimation::marginal density: I'm computing the posterior log marginal density (modified harmonic mean)... Done!
@@ -103,27 +103,27 @@ Estimation::marginal density: I'm computing the posterior log marginal density (
 
 ESTIMATION RESULTS
 
-Log data density is -334.656801.
+Log data density is -334.739960.
 
 parameters
           prior mean   post. mean        90% HPD interval    prior       pstdev
 
-tau            2.000       2.3691      1.5677      3.2437     gamm       0.5000
-kappa          0.500       0.8467      0.6768      1.0000     unif       0.2887
-psi1           1.500       1.9057      1.5400      2.2799     gamm       0.2500
-psi2           0.500       0.5891      0.1401      1.0172     gamm       0.2500
-rho_R          0.500       0.7733      0.7106      0.8291     unif       0.2887
-rho_g          0.500       0.9777      0.9541      1.0000     unif       0.2887
-rho_z          0.500       0.9238      0.8836      0.9620     unif       0.2887
-rA             0.500       0.4175      0.0000      0.7791     gamm       0.5000
-piA            7.000       3.3944      2.7873      4.0200     gamm       2.0000
-gammaQ         0.400       0.6018      0.3834      0.8219     norm       0.2000
+tau            2.000       2.4140      1.5790      3.3356     gamm       0.5000
+kappa          0.500       0.8488      0.6844      0.9998     unif       0.2887
+psi1           1.500       1.9319      1.5693      2.3300     gamm       0.2500
+psi2           0.500       0.5869      0.1379      1.0362     gamm       0.2500
+rho_R          0.500       0.7772      0.7213      0.8308     unif       0.2887
+rho_g          0.500       0.9795      0.9563      1.0000     unif       0.2887
+rho_z          0.500       0.9239      0.8874      0.9656     unif       0.2887
+rA             0.500       0.4545      0.0070      0.8367     gamm       0.5000
+piA            7.000       3.3982      2.7440      4.0632     gamm       2.0000
+gammaQ         0.400       0.5974      0.3621      0.8101     norm       0.2000
 
 standard deviation of shocks
           prior mean   post. mean        90% HPD interval    prior       pstdev
 
-errrshk        0.501       0.2172      0.1736      0.2586     invg       0.2621
-errgshk        1.253       0.6514      0.5633      0.7441     invg       0.6551
-errzshk        0.627       0.1993      0.1634      0.2368     invg       0.3276
+errrshk        0.501       0.2163      0.1735      0.2569     invg       0.2621
+errgshk        1.253       0.6608      0.5631      0.7456     invg       0.6551
+errzshk        0.627       0.2002      0.1663      0.2357     invg       0.3276
 
-Total computing time : 0h05m06s
+Total computing time : 0h01m44s

@@ -46,8 +46,8 @@ MODEL SUMMARY
 
 MATRIX OF COVARIANCE OF EXOGENOUS SHOCKS
 Variables     errgshk   errzshk   errrshk
-errgshk      0.000000  0.000000  0.000000
-errzshk      0.000000  0.000000  0.000000
+errgshk      0.396900  0.000000  0.000000
+errzshk      0.000000  0.036100  0.000000
 errrshk      0.000000  0.000000  0.044100
 
 POLICY AND TRANSITION FUNCTIONS
@@ -62,35 +62,34 @@ errrshk                    -0.601102       -0.951224        0.493031        1.00
 
 MOMENTS OF SIMULATED VARIABLES
 VARIABLE              MEAN       STD. DEV.        VARIANCE        SKEWNESS        KURTOSIS
-yy                0.010209        0.135307        0.018308        0.034912        0.019439
-dp                0.016155        0.214119        0.045847        0.034912        0.019439
-nomr             -0.008373        0.110981        0.012317       -0.034912        0.019439
-rshk             -0.010486        0.205337        0.042163        0.042423        0.186224
+yy               -1.007167        4.288901       18.394669        0.008564       -0.707699
+dp                0.039402        0.426414        0.181829        0.126438       -0.052422
+nomr              0.092759        0.571504        0.326617        0.290944        0.157650
+rshk              0.003450        0.205293        0.042145       -0.010444        0.369313
 
 
 CORRELATION OF SIMULATED VARIABLES
 VARIABLE         yy       dp     nomr     rshk
-yy           1.0000   1.0000  -1.0000  -0.9270
-dp           1.0000   1.0000  -1.0000  -0.9270
-nomr        -1.0000  -1.0000   1.0000   0.9270
-rshk        -0.9270  -0.9270   0.9270   1.0000
+yy           1.0000   0.2018   0.2163  -0.0564
+dp           0.2018   1.0000   0.6216  -0.4252
+nomr         0.2163   0.6216   1.0000   0.1718
+rshk        -0.0564  -0.4252   0.1718   1.0000
 
 
 AUTOCORRELATION OF SIMULATED VARIABLES
 VARIABLE          1        2        3        4        5
-yy           0.4123   0.1695   0.0201  -0.0236  -0.0235
-dp           0.4123   0.1695   0.0201  -0.0236  -0.0235
-nomr         0.4123   0.1695   0.0201  -0.0236  -0.0235
-rshk         0.0392   0.0372  -0.0382  -0.0309  -0.0354
+yy           0.9864   0.9741   0.9617   0.9491   0.9362
+dp           0.5853   0.4291   0.3501   0.3071   0.2555
+nomr         0.9369   0.8687   0.7926   0.7190   0.6468
+rshk        -0.0202   0.0315  -0.0137   0.0106  -0.0506
 
 
 
 VARIANCE DECOMPOSITION SIMULATING ONE SHOCK AT A TIME (in percent)
                  errgshk           errzshk           errrshk  Tot. lin. contr.
-yy                  0.00              0.00            100.11            100.11
-dp                  0.00              0.00            100.11            100.11
-nomr                0.00              0.00            100.11            100.11
+yy                 99.02              0.12              0.10             99.24
+dp                  0.00             81.04             24.24            105.28
+nomr                0.00             96.22              3.62             99.84
 rshk                0.00              0.00            100.11            100.11
 Note: numbers do not add up to 100 due to non-zero correlation of simulated shocks in small samples
 
-Total computing time : 0h00m01s
